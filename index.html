@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Aloidia Client - Login
+        </title>
+        <script defer src="main.js"></script>
+        <!--Dont judge me there was a problem linking the css file for whatever reason-->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                height: 100%;
+                width: 100%;
+                display: grid;
+                background-color: #76ceff;
+                align-items: center;
+            }
+            #input-section {
+                background-color: #0094ff;
+                padding: 15px;
+                display: grid;
+                border-radius: 10px;
+                grid-gap: 20px;
+                width: 400px;
+                min-height: 250px;
+                position: relative;
+                left: 37%;
+                align-items: center;
+            }
+            .textinput {
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                padding: 5px;
+                font-size: 20px;
+            }
+            #login-submit {
+                outline: none;
+                border: none;
+                border-radius: 6px;
+                width: 75px;
+                height: 25px;
+                position: relative;
+                left: 40%;
+
+            }
+                #login-submit:hover {
+                    background-color: #fff;
+                    cursor: pointer;
+                }
+            #login-header {
+                background-color: #00bdff;
+                border-radius: 10px;
+                padding: 6px;
+                color: white;
+                font-family: Arial;
+                display: grid;
+                align-items: center;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="input-section">
+            <div id="login-header">
+                <h2 id="login-header-element">
+                    Aloidia Client
+                </h2>
+                <p>
+                    Please log in
+                </p>
+            </div>
+            <input class="textinput" type="password" placeholder="ID" id="id-input" />
+            <input class="textinput" type="password" placeholder="Password" id="password-input" />
+            <input type="button" value="Submit" id="login-submit" />
+            <div style="color: white; display: none; font-family: Arial;" id="output">
+                <p>
+                    Here is your Aloidia Client Bookmarklet. To install:
+                </p>
+            </div>
+        </section>
+    </body>
+
+</html>
